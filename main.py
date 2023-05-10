@@ -43,12 +43,14 @@ def clickgalka():
         VERNO+=1
         otvechenoverno.config(text=VERNO)
         wondow.after_cancel(TIMER)
+        entryanswer.delete(0, tkinter.END)
         pushbuttonstart()
     else:
         poleotveta.config(text=VOPROS.iloc[0, 1])
         NEVERNO+=1
         otvechenoneverno.config(text=NEVERNO)
         wondow.after_cancel(TIMER)
+        entryanswer.delete(0, tkinter.END)
         pushbuttonstart()
 
 
